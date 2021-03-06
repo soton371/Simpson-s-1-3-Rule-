@@ -12,9 +12,9 @@ sum1 = f(a)+f(b)
 
 for i in range(1, int(n)):
     if i % 2 == 0:
-       sum2 = sum2 + f(a+i*h)
+       sum2 += f(a+i*h)
     else:
-        sum3 = sum3 + f(a+i*h)
+        sum3 += f(a+i*h)
 
 area = (h/3)*(sum1+2*sum2+4*sum3)
 print("the area is: {}".format(area))
